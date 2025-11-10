@@ -85,6 +85,7 @@ class View extends JFrame {
       }
     });
     this.setUI(NewSwingUI.getInstance());
+    JFrame.setDefaultLookAndFeelDecorated(true);
     drawingPanel = new DrawingPanel();
     buttonPanel = new JPanel();
     Container contentpane = getContentPane();

@@ -77,6 +77,7 @@ class View extends JFrame {
   }
 
   public View() {
+    
     super("Drawing Program 1.1  Untitled");
     fileName = null;
     addWindowListener(new WindowAdapter() {
@@ -84,8 +85,10 @@ class View extends JFrame {
         System.exit(0);
       }
     });
+    setLocation(100, 100);
+    setSize(1000, 1000);
     this.setUI(NewSwingUI.getInstance());
-    JFrame.setDefaultLookAndFeelDecorated(true);
+    
     drawingPanel = new DrawingPanel();
     buttonPanel = new JPanel();
     Container contentpane = getContentPane();
